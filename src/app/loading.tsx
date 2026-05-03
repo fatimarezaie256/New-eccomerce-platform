@@ -3,8 +3,8 @@ import React from "react";
 
 function Loading() {
   return (
-    <div className="flex items-center justify-center">
-      <Image src="/loader.gif" alt="please wait" height={100} width={100} />
+    <div className="flex h-screen w-full items-center justify-center flex-col">
+      <Image src="/loader.gif" alt="please wait" height={40} width={40} />
     </div>
   );
 }

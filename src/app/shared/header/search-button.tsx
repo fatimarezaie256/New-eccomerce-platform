@@ -10,6 +10,7 @@ function SearchButton() {
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Search Products"
+        className="rounded-md"
       />
     </div>
   );

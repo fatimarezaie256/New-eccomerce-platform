@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-@import "tailwindcss/preflight";
+@i@tailwind base;
 @tailwind utilities;
-@tailwind utilities;
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 /* Tailwind v4 dark variant (required for next-themes) */
 @custom-variant dark (.dark &);

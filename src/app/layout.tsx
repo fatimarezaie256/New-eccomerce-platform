@@ -4,6 +4,8 @@ import { ThemeProvider } from "next-themes";
 import { Inter, Figtree } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { APP_NAME } from "../../constants";
+import Footer from "@/components/footer";
+import ProductList from "./shared/products/product-list";
 
 const figtree = Figtree({ subsets: ["latin"], variable: "--font-sans" });
 
