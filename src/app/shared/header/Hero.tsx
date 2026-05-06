@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import { Slider } from "react-slick";
+import Slider from "react-slick";
 function Hero() {
   const settings = {
     dots: true,
@@ -14,8 +14,8 @@ function Hero() {
             src="/images/banner-1.jpg"
             alt="banner"
             className="object-cover w-full h-72"
-            height={100}
-            width={100}
+            height={1000}
+            width={1000}
           />
         </div>
         <div>
@@ -23,8 +23,8 @@ function Hero() {
             src="/images/banner-2.jpg"
             alt="banner"
             className="object-cover w-full h-72"
-            height={100}
-            width={100}
+            height={1000}
+            width={1000}
           />
         </div>
       </Slider>

@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      suppressContentEditableWarning
+      suppressHydrationWarning
       lang="en"
       className={cn("h-full", "antialiased", "font-sans", figtree.variable)}
     >
