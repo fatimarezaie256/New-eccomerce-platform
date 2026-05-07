@@ -4,3 +4,9 @@ export async function GetProduct() {
 
   return response.data.data;
 }
+
+export async function getAllPrpducts(url: string) {
+  const data = await fetch(url);
+  const response = await Response.json;
+  return response;
+}

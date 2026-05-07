@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ProductCard from "./product-cart";
+import Link from "next/link";
 
 type ProductListProps = {
   title?: string;
@@ -30,7 +31,9 @@ export default function ProductList({
         )}
       </div>
       <div className="w-full flex my-4 justify-center">
-        <Button> View All Products</Button>
+        <Button>
+          <Link href="/products">View All Products</Link>
+        </Button>
         {/* {productList.data.} */}
       </div>
     </div>

@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ProductPrice from "./product-price";
 
 function ProductCard({ product, limit }: { product: any; limit: number }) {
   return (
@@ -23,7 +24,9 @@ function ProductCard({ product, limit }: { product: any; limit: number }) {
         <h1 className="font-semibold text-lg">{product.name}</h1>
 
         {/* Price */}
-        <p className="">{product.price} AFN</p>
+        <div className="flex flex-row justify-between">
+          <ProductPrice price={product.price} />
+        </div>
 
         {/* Rating */}
         <div className="flex items-center gap-1">

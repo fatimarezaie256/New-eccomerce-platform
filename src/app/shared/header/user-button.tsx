@@ -5,7 +5,7 @@ import React from "react";
 
 function UserButton() {
   return (
-    <Button asChild className="rounded-md">
+    <Button asChild className="">
       <Link href="sign-in">
         <UserIcon />
         sign in

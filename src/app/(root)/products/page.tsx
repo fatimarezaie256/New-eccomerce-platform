@@ -1,4 +1,7 @@
-import { GetProduct } from "../../../../actions/product.action";
+// import { GetProduct } from "../../../../actions/product.action";
+
+import ProductList from "@/app/shared/products/product-list";
+import { GetProduct } from "../../../../lib/actions/product.action";
 
 type Product = {
   id: number;
@@ -11,13 +14,10 @@ type Product = {
   images: string[];
 };
 export default async function Page() {
-  const data = await GetProduct();
-  // console.log(data);
+  const products = await GetProduct();
   return (
     <div>
-      {data.map((pro, index) => (
-        <h1 key={index}>{pro.name}</h1>
-      ))}
+      <ProductList productList={products} title="All Products" />
     </div>
   );
 }
