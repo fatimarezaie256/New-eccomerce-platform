@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import ProductCard from "./product-cart";
+import Link from "next/link";
 
 type ProductListProps = {
   title?: string;
@@ -15,7 +16,7 @@ export default function ProductList({
   productList: any;
   title?: string;
 }) {
-  const totalPage = productList.meta.last_page;
+  // const totalPage = productList.meta.last_page;
   return (
     <div className="my-10">
       <h2 className="h2-bold mb-4">{title ? title : "Newest Arrivals"}</h2>
@@ -30,8 +31,10 @@ export default function ProductList({
         )}
       </div>
       <div className="w-full flex my-4 justify-center">
-        <Button> View All Products</Button>
-        {/* {productList.data.} */}
+        <Button>
+          {" "}
+          <Link href="/products">View All Products</Link>
+        </Button>
       </div>
     </div>
   );
